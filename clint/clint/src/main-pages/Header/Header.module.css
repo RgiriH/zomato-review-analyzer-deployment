@@ -1,0 +1,41 @@
+.main_div{
+    height: 100px;
+    width: 100svw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color : rgb(32, 31, 49);
+    padding: 0% 5%;
+    color: #ccc;
+   
+}
+
+.logo{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (max-width : 640px) {
+    .main_div{
+        height: 90px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+}
+
+@media (max-width : 420px) {
+    .main_div {
+        height: 90px;
+    }
+
+    
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .save{
+        font-size: 12px;
+    }
+}

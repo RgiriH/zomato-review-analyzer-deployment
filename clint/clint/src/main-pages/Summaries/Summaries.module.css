@@ -1,0 +1,161 @@
+
+.outer_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+    width: 100%;
+    height: fit-content;
+    min-height: calc(100% - 260px);
+    width: fit-content;
+    min-width: 100svw;
+}
+
+.feed_cover{
+    margin-top: 50px;
+    height: 390px;
+   
+    flex-wrap: wrap;
+    justify-content: center;
+     align-items: center;
+    
+    position: relative;
+
+}
+
+.cover_feed_inner{
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+   
+}
+
+.gradient {
+
+    top: -5px;
+    height: 70px;
+    width: 100%;
+    
+    position: absolute;
+    background-image: linear-gradient(180deg, rgb(32, 31, 49) 20%, rgba(43, 42, 60, 0) 80%);
+    
+}
+
+.gradientReverse{
+    bottom: -5px;
+    height: 70px;
+    width: 100%;
+    
+    position: absolute;
+    background-image: linear-gradient(0deg, rgb(32, 31, 49) 10%, rgba(43, 42, 60, 0) 90%);
+}
+
+.span{
+    color: bisque;
+    opacity: .8;
+}
+
+.date{
+    color: #aaa;
+   
+}
+
+.button{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(106, 247, 106);
+}
+
+
+
+.url{
+    color: inherit;
+    font-weight: 600;
+}
+
+.feeds{
+    width: 400px;
+    min-height: 180px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, .05);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header{
+    width: 350px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, .05);
+    color: aliceblue;
+    align-content: center;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 25px;
+    margin: 0px auto;
+}
+@media (max-width : 640px) {
+    .outer_div{
+        min-height: calc(100% - 230px);
+        height: fit-content;
+        margin-top: 30px;
+    }
+
+    .header {
+            width: 300px;
+            font-size: 20px;
+            
+    }
+
+    .feeds {
+        width: 100%;
+        height: fit-content;
+       
+    
+     }
+
+     .feed_cover{
+        column-gap: 0px;
+        
+     }
+}
+
+@media (max-width : 420px) {
+    .header{
+        width: 200px;
+        font-size: 20px;
+    }
+
+   
+}
+
+@media (max-width : 400px) {
+    .feed_cover{
+     
+    }
+    
+}
+@media (max-width : 840px) {
+    .feeds {
+            width: fit-content;
+            height: auto;
+            margin: 0px 10px;
+    
+        }
+}
+
